@@ -30,7 +30,7 @@ nav {
   padding-bottom: 0.5rem;
   text-transform: uppercase !important;
   border-bottom: 1px solid #e5cedc;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -344,6 +344,24 @@ nav {
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  min-width: 10rem;
+  padding: 0px 0 !important;
+  margin: 0 !important;
+  color: #323333 !important;
+  text-align: left;
+  list-style: none;
+  background-color: transparent !important;
+  /* background-clip: padding-box; */
+  border: none !important;
+}
+
+.dropdown-item {
+  font-size: 0.875rem;
 }
 
 header.masthead {
