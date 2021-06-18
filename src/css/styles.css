@@ -218,6 +218,7 @@ a {
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
+
 /* 220 */
 .dropdown-menu {
   position: absolute;
@@ -399,13 +400,15 @@ MediaQuery
     background: rgba(50, 51, 51, 0.3);
     position: absolute;
     width: 700px;
-    height: 250px;
+    line-height: 150px;
     top: 30%;
   }
   .masthead h2 {
     font-weight: 400;
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     line-height: 40px !important;
+    padding: 0px;
+    margin: 0px;
   }
 
   .CTA-btn {
@@ -474,13 +477,15 @@ MediaQuery
     width: 900px;
     height: 150px;
     top: 30%;
-    line-height: 50px !important;
+    line-height: 100px !important;
   }
   .masthead h2 {
     display: inline-block;
     font-weight: 400;
     font-size: 1.125rem !important;
     line-height: 1.5 !important;
+    padding: 0px;
+    margin: 0px;
   }
 
   .CTA-btn-container {
