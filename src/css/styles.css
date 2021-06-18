@@ -23,8 +23,32 @@ h2 {
   color: #323333 !important;
 }
 
+h1 {
+  margin: 40px 20px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 20px;
+}
+
 nav {
   background-color: #fff;
+}
+
+a {
+  color: #4c4dab;
 }
 
 .navbar {
@@ -214,6 +238,10 @@ nav {
   font-size: 0.875rem;
 }
 
+.breadcrumb {
+  margin: 20px;
+}
+
 .masthead {
   background: url("../img/harli-marten-unsplash.jpg");
   background-position: center;
@@ -280,10 +308,19 @@ nav {
   filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
 }
 
+.volver {
+  margin: 50px 20px;
+  color: #4c4dab;
+}
+.main img {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 .footer {
   background-color: #323333;
   color: #f1f4f5;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   height: 10%;
@@ -302,7 +339,7 @@ nav {
   transition: all 0.3s linear;
 }
 .footer a:hover {
-  color: #007bff;
+  color: #fddc22;
 }
 .footer a:visited {
   color: #007bff;
@@ -381,6 +418,12 @@ MediaQuery
     font-size: 1.5rem;
   }
 
+  .main h1,
+  .main h2,
+  .main p {
+    color: #323333 !important;
+  }
+
   .footer span {
     text-align: left;
     margin-top: 25px;
@@ -393,30 +436,6 @@ MediaQuery
 
 /*  laptop */
 @media (min-width: 1200px) {
-  h1 {
-    color: #323333 !important;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    margin: 50px 20px 20px 20px;
-  }
-  h2 {
-    color: #323333 !important;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin: 50px 20px 20px 20px;
-  }
-  p {
-    color: #323333 !important;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 50px 20px 20px 20px;
-  }
-
   .dropdown-menu {
     position: absolute;
     right: 100px !important;
@@ -433,13 +452,6 @@ MediaQuery
   }
 
   .dropdown-item {
-    font-size: 0.875rem;
-  }
-
-  .breadcrumb {
-    margin: 20px;
-  }
-  .breadcrumb-item {
     font-size: 0.875rem;
   }
 
@@ -461,7 +473,7 @@ MediaQuery
     position: absolute;
     width: 900px;
     height: 150px;
-    top: 25%;
+    top: 30%;
     line-height: 50px !important;
   }
   .masthead h2 {
@@ -498,6 +510,75 @@ MediaQuery
   }
   .profesionales {
     float: left;
+  }
+
+  .breadcrumb {
+    margin: 20px;
+  }
+  .breadcrumb-item {
+    font-size: 0.875rem;
+  }
+
+  .main h1 {
+    color: #323333 !important;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 50px 20px 20px 20px;
+  }
+  .main h2 {
+    color: #323333 !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 75px 20px 20px 20px;
+  }
+  .main p {
+    color: #323333 !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 30px;
+  }
+  .volver {
+    margin: 50px 20px;
+    color: #4c4dab;
+  }
+  .main img {
+    display: block;
+    width: 45%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #4c4dab;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: #fddc22;
+  }
+
+  .chevron-up {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    color: #fff;
   }
 
   .footer-menu ul {
