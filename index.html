@@ -42,7 +42,7 @@
   <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 text-uppercase" id="mainNav">
             <div class="container px-2 ">
-                <a class="navbar-brand" href="#page-top"><Start Bootstrap><img class="logo" src="src/img/Logo.png" alt="logo" width="250"/></a>
+                <a class="navbar-brand" href="#page-top"><img class="logo" src="src/img/Logo.png" alt="logo" width="250"/></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -55,12 +55,12 @@
                                 <li class="list-inline-item"><a class="dropdown-item" href="#">Testimonios</a></li>
                                 <li class="list-inline-item"><a class="dropdown-item" href="#">Resultados</a></li>
                             </ul>
+                            <div id="menu-line"></div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
                         <li class="nav-item"><a class="nav-link" href="mailto:testimoniosie@gmail.com" target="_blank"><i class="icon"  data-feather="mail"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="icon share-2"  data-feather="share-2"></i></a></li>
-
                     </ul>
                 </div>
             </div>
@@ -77,20 +77,26 @@
                     <div class="eslogan col-lg-8 align-self-baseline">
                         <h2>Estudio exploratorio sobre las condiciones actuales en que se producen las intervenciones relacionadas con las Interrupciones de Embarazo en España.</h2>
                     </div>
-                    <div class="CTA-btn">   
-                        <a class="btn btn-primary " href="#encuestas">Mujeres y Familias</a>
-                         <a class="btn btn-primary " href="#encuestas">Profesionales</a>
+
+                    <div class="container CTA-btn-container">
+                        <div class="row CTA-btn">
+                             <div class="col-md-6">
+                                <a class="btn btn-primary familias btn-block " href="#encuestas">Mujeres y Familias</a>
+                                </div>
+                             <div class="col-md-6">
+                                <a class="btn btn-primary profesionales btn-block" href="https://docs.google.com/forms/d/e/1FAIpQLSe4GgjJQXuMRwPWqhW65c4kIxZH-7TQHYqpkq9mHP_ulqLQzQ/viewform" target="_blank">Profesionales</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
             </div>
         </header>
 
 <!-- Footer-->
-<footer class="footer fixed-bottom py-3">
+<footer class="footer fixed-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <span>© estudioie.es   2021</span>
+                        <span> © estudioie.es   2021</span>
                     </div>
                     <!-- End Col -->
                     <div class="col-md-6">
@@ -137,6 +143,9 @@
     <script>
       feather.replace()
     </script>
+
+ <!-- Core theme JS-->
+        <script src="src/js/scripts.js"></script>
 
   </body>
 </html>
