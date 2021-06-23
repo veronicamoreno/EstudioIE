@@ -42,7 +42,9 @@ p {
   line-height: 28px;
   margin: 20px;
 }
-
+b {
+  font-weight: 600 !important;
+}
 nav {
   background-color: #fff;
 }
@@ -150,7 +152,7 @@ a {
 }
 .navbar-light :hover,
 .navbar-light :focus {
-  color: #323333;
+  color: #4c4dab;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #323333;
@@ -219,7 +221,6 @@ a {
   color: #fff;
 }
 
-/* 220 */
 .dropdown-menu {
   position: absolute;
   right: 15px !important;
@@ -231,7 +232,6 @@ a {
   text-align: left;
   list-style: none;
   background-color: transparent !important;
-  /* background-clip: padding-box; */
   border: none !important;
 }
 
@@ -308,6 +308,10 @@ a {
   height: 67px;
   filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
 }
+.btn-primary:hover {
+  background-color: #fddc22 !important;
+  color: #4c4dab;
+}
 
 .volver {
   margin: 50px 20px;
@@ -356,9 +360,9 @@ a {
 /* Icons  */
 .icon {
   color: #323333;
-  stroke-width: 1px;
+  stroke-width: 1.5px;
   padding: 3px;
-  border: 1px solid #323333;
+  border: 1.5px solid #323333;
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -531,12 +535,12 @@ MediaQuery
     margin: 50px 20px 20px 20px;
   }
   .main h2 {
-    color: #323333 !important;
-    font-style: italic;
     font-weight: 500;
     font-size: 1rem;
     line-height: 30px;
     text-transform: uppercase;
+    font-style: normal !important;
+    font-weight: bold;
     margin: 75px 20px 20px 20px;
   }
   .main p {
@@ -556,6 +560,49 @@ MediaQuery
     width: 45%;
     margin-top: 50px;
     margin-bottom: 100px;
+  }
+  .intro {
+    margin: 50px 20px !important;
+  }
+  .encuesta {
+    margin-top: 20px !important;
+    margin-left: 0px !important;
+    border: 1px solid #4d4f4f;
+    border-style: hidden hidden solid hidden;
+  }
+  .container-cards {
+    margin-bottom: 150px !important;
+  }
+
+  .card {
+    box-shadow: inset 0px 4px 10px rgba(241, 244, 245, 0.05);
+    filter: drop-shadow(0px 4px 20px rgba(50, 51, 51, 0.05));
+    border-radius: 8px !important;
+    height: 375px;
+  }
+  .card-img-top {
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 135px;
+  }
+  .card-title {
+    margin: 10px 0px !important;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .card-text {
+    margin: 10px 0px !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  .card-btn {
+    margin: 10px 0px 10px 7px !important;
+    width: 150px !important;
+    height: 34.5px !important;
+    padding: 4px 0px 2px 0px !important;
+    font-size: 1rem !important;
   }
 
   #myBtn {
