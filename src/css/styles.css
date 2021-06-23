@@ -313,6 +313,21 @@ a {
   color: #4c4dab;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  left: 325px;
+  top: 675px;
+  width: 37.01px;
+  height: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #4c4dab;
+  cursor: pointer;
+  border-radius: 4px;
+}
 .volver {
   margin: 50px 20px;
   color: #4c4dab;
@@ -320,6 +335,52 @@ a {
 .main img {
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.col-sm-8 {
+  height: 1300px;
+}
+
+.card {
+  box-shadow: inset 0px 4px 10px rgba(241, 244, 245, 0.05);
+  filter: drop-shadow(0px 4px 20px rgba(50, 51, 51, 0.05));
+  border-radius: 8px !important;
+  height: 375px;
+  margin: 15px 0px 15px 60px;
+}
+.card-img-top {
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 135px;
+}
+.card-title {
+  margin: 10px 0px !important;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.subtitulo-encuesta {
+  margin-top: 20px !important;
+  margin-left: 0px !important;
+  border: 1px solid #4d4f4f;
+  border-style: hidden hidden solid hidden;
+}
+.container-cards {
+  margin-bottom: 150px !important;
+}
+
+.card-text {
+  margin: 10px 0px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.card-btn {
+  margin: 10px 0px 10px 7px !important;
+  width: 150px !important;
+  height: 34.5px !important;
+  padding: 4px 0px 2px 0px !important;
+  font-size: 1rem !important;
 }
 
 .footer {
@@ -371,6 +432,13 @@ a {
 }
 .share-2 {
   margin-left: 30px;
+}
+.chevron-up {
+  border: none;
+  margin: 3px 3px;
+  top: 0px;
+  left: 0px;
+  color: #fff;
 }
 
 /* 
@@ -424,11 +492,25 @@ MediaQuery
     height: 75px;
     font-size: 1.5rem;
   }
-
+  #myBtn {
+    left: 720px;
+    top: 875px;
+  }
   .main h1,
   .main h2,
   .main p {
     color: #323333 !important;
+  }
+
+  .col-sm-8 {
+    width: 100%;
+    height: 475px;
+  }
+  .container-cards {
+    margin: 0px;
+  }
+  .card {
+    margin: 0px;
   }
 
   .footer span {
@@ -521,6 +603,15 @@ MediaQuery
     float: left;
   }
 
+  #myBtn {
+    left: 1150px !important;
+    top: 675px !important;
+  }
+
+  #myBtn:hover {
+    background-color: #fddc22;
+  }
+
   .breadcrumb {
     margin: 20px;
   }
@@ -561,76 +652,28 @@ MediaQuery
     margin-top: 50px;
     margin-bottom: 100px;
   }
+  .col-sm-8 {
+    height: auto !important;
+    width: 66.6%;
+  }
+  .col-sm-4 {
+    width: 33.3%;
+  }
+
   .intro {
     margin: 50px 20px !important;
   }
-  .encuesta {
-    margin-top: 20px !important;
-    margin-left: 0px !important;
-    border: 1px solid #4d4f4f;
-    border-style: hidden hidden solid hidden;
-  }
-  .container-cards {
-    margin-bottom: 150px !important;
-  }
 
   .card {
-    box-shadow: inset 0px 4px 10px rgba(241, 244, 245, 0.05);
-    filter: drop-shadow(0px 4px 20px rgba(50, 51, 51, 0.05));
-    border-radius: 8px !important;
-    height: 375px;
+    margin: 0px;
   }
-  .card-img-top {
-    margin: 0px !important;
-    padding: 0px !important;
-    height: 135px;
-  }
-  .card-title {
-    margin: 10px 0px !important;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-  .card-text {
-    margin: 10px 0px !important;
-    font-size: 14px !important;
-    line-height: 18px !important;
-  }
+
   .card-btn {
     margin: 10px 0px 10px 7px !important;
     width: 150px !important;
     height: 34.5px !important;
     padding: 4px 0px 2px 0px !important;
     font-size: 1rem !important;
-  }
-
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #4c4dab;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-
-  #myBtn:hover {
-    background-color: #fddc22;
-  }
-
-  .chevron-up {
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    top: 0px;
-    left: 0px;
-    color: #fff;
   }
 
   .footer-menu ul {
@@ -822,6 +865,13 @@ Navigation Bar
   }
   .navbar-expand-xl .navbar-toggler {
     display: none;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1040px;
   }
 }
 
