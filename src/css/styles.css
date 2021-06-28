@@ -81,8 +81,6 @@ a {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 10px;
-  /* font-size: 1.25rem;
-  text-decoration: none; */
   white-space: nowrap;
 }
 
@@ -93,10 +91,18 @@ a {
   margin-bottom: 0;
   list-style: none;
 }
+.nav-item {
+  padding-left: 60px !important;
+}
+.inline {
+  display: inline;
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
 }
+
 .navbar-nav .dropdown-menu {
   position: static;
 }
@@ -120,6 +126,10 @@ a {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+}
+.dropdown-toggle {
+  padding-left: 0px;
+  padding-right: 15px;
 }
 
 .navbar-expand {
@@ -149,10 +159,6 @@ a {
 
 .navbar-light {
   color: #323333;
-}
-.navbar-light :hover,
-.navbar-light :focus {
-  color: #4c4dab;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #323333;
@@ -184,59 +190,11 @@ a {
   color: #323333;
 }
 
-.navbar-dark {
-  color: #fff;
-}
-.navbar-dark :hover,
-.navbar-dark :focus {
-  color: #fff;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
-}
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: #4c4dab;
-}
-.navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
-}
-.navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #4c4dab;
-}
-.navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.55);
-}
-.navbar-dark .navbar-text a,
-.navbar-dark .navbar-text a:hover,
-.navbar-dark .navbar-text a:focus {
-  color: #fff;
-}
-
-.dropdown-menu {
-  position: absolute;
-  right: 15px !important;
+.navbar-icon {
   display: none;
-  min-width: 10rem;
-  padding: 0px 0 !important;
-  margin: 0 !important;
-  color: #323333 !important;
-  text-align: left;
-  list-style: none;
-  background-color: transparent !important;
-  border: none !important;
 }
-
-.dropdown-item {
-  font-size: 0.875rem;
+.secondary-navbar {
+  display: none;
 }
 
 .breadcrumb {
@@ -290,7 +248,7 @@ a {
 
 .CTA-btn {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 6px;
   display: flex;
   flex-direction: row;
@@ -386,7 +344,6 @@ a {
 .footer {
   background-color: #323333;
   color: #f1f4f5;
-  /* position: absolute; */
   bottom: 0;
   width: 100%;
   height: 10%;
@@ -467,30 +424,33 @@ MediaQuery
     font-weight: 600 !important;
     font-size: 2rem !important;
     line-height: 45px !important;
+    text-align: left !important;
   }
   .eslogan {
     background: rgba(50, 51, 51, 0.3);
     position: absolute;
-    width: 700px;
+    width: 650px;
+    height: 265px;
     line-height: 150px;
     top: 30%;
   }
   .masthead h2 {
     font-weight: 400;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     line-height: 40px !important;
     padding: 0px;
     margin: 0px;
   }
-
   .CTA-btn {
     position: absolute;
     top: 70%;
+    margin: 0px;
+    left: 40px;
   }
   .btn-primary {
-    width: 350px;
+    width: 300px;
     height: 75px;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
   #myBtn {
     left: 720px;
@@ -525,23 +485,26 @@ MediaQuery
 
 /*  laptop */
 @media (min-width: 1200px) {
-  .dropdown-menu {
-    position: absolute;
-    right: 100px !important;
+  .navbar-icon {
+    display: inline-flex !important;
+  }
+  .dropdown-toggle,
+  .hide {
     display: none;
-    min-width: 10rem;
-    padding: 0px 0 !important;
-    margin: 0 !important;
-    color: #323333 !important;
-    text-align: left;
-    list-style: none;
-    background-color: transparent !important;
-    /* background-clip: padding-box; */
-    border: none !important;
+  }
+  .secondary-navbar {
+    display: inline-flex !important;
+    position: absolute;
+    right: 100px;
+  }
+  .secondary-navbar a {
+    color: #323333;
+    text-transform: uppercase;
+    font-size: 0.875rem;
   }
 
-  .dropdown-item {
-    font-size: 0.875rem;
+  .margin-estudio {
+    margin-top: 7px;
   }
 
   .masthead {
@@ -787,6 +750,9 @@ Navigation Bar
   }
   .navbar-expand-sm .navbar-toggler {
     display: none;
+  }
+  .nav-item {
+    padding-left: 0px !important;
   }
 }
 @media (min-width: 768px) {
