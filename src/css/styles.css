@@ -247,7 +247,7 @@ a {
   position: absolute;
   width: 1061px;
   height: 172px;
-  top: 20px;
+  top: 25px;
 }
 .masthead h2 {
   font-family: Inter;
@@ -262,7 +262,7 @@ a {
 
 .CTA-btn {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 6px;
   display: flex;
   flex-direction: row;
