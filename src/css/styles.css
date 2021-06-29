@@ -217,14 +217,28 @@ a {
 
 .masthead h1 {
   position: absolute;
-  left: 17.09%;
-  right: 17.19%;
-  top: 13%;
+  left: 15px;
+  /* right: 17.19%; */
+  top: 10%;
   font-weight: 400 !important;
   font-size: 1.5rem !important;
   line-height: 45px !important;
   color: #f1f4f5;
+  margin: 30px 20px !important;
 }
+.txt-primary {
+  width: 100%;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  text-transform: uppercase !important;
+  color: #4c4dab !important;
+  padding: 20px;
+  margin-left: 0px;
+  background: #f1f4f5;
+  box-shadow: 0px 4px 15px rgba(50, 51, 51, 0.2);
+}
+
 .eslogan {
   /* background: transparent; */
   border-radius: 5px;
@@ -233,7 +247,7 @@ a {
   position: absolute;
   width: 1061px;
   height: 172px;
-  top: 27%;
+  top: 17%;
 }
 .masthead h2 {
   font-family: Inter;
@@ -261,9 +275,9 @@ a {
   border: #4c4dab !important;
   border-radius: 8px;
   margin: 10px;
-  padding: 20px 25px 25px 25px !important;
+  padding: 16px 25px 25px 25px !important;
   width: 300px;
-  height: 67px;
+  height: 60px;
   filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
 }
 .btn-primary:hover {
@@ -289,10 +303,6 @@ a {
 .volver {
   margin: 50px 20px;
   color: #4c4dab;
-}
-.main img {
-  margin-top: 50px;
-  margin-bottom: 100px;
 }
 
 .col-sm-8 {
@@ -339,6 +349,40 @@ a {
   height: 34.5px !important;
   padding: 4px 0px 2px 0px !important;
   font-size: 1rem !important;
+}
+.col-3 {
+  width: 50%;
+}
+/*  Images */
+.bannerTertiary {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.rounded-circle {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  color: #323333;
+  margin: 20px 0px;
+}
+.txt-centered {
+  position: relative;
+}
+.txt-centered > img {
+  position: absolute;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 43px;
+  left: 15px;
+  max-width: 200px;
+  padding: 10px 30px;
+  background: rgba(76, 77, 171, 0.6);
+  border-radius: 0px 0px 155px 155px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
 }
 
 .footer {
@@ -536,6 +580,12 @@ MediaQuery
     padding: 0px;
     margin: 0px;
   }
+  .txt-primary {
+    background: none;
+    box-shadow: none;
+    font-size: 20px !important;
+    line-height: 36px;
+  }
 
   .CTA-btn-container {
     position: absolute;
@@ -637,6 +687,38 @@ MediaQuery
     height: 34.5px !important;
     padding: 4px 0px 2px 0px !important;
     font-size: 1rem !important;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+  .rounded-circle {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  /*  Images menu */
+  .txt-centered {
+    position: relative;
+  }
+  .txt-centered > img {
+    position: absolute;
+    /* top: 47%;
+  left: 19%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: white;
+  background: rgba(76, 77, 171, 0.6);
+  border-radius: 0px 0px 150px 150px;
+  padding: 10px 43px; */
+  }
+  .overlay-text {
+    text-transform: uppercase;
+    color: white;
+    background: rgba(76, 77, 171, 0.6);
+    border-radius: 0px 0px 150px 150px;
+    padding: 10px 55px;
+    bottom: 5px;
+    max-width: 200px;
   }
 
   .footer-menu ul {
