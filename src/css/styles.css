@@ -53,8 +53,9 @@ a {
   color: #4c4dab;
 }
 
+/* -- Navigation --  */
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -197,10 +198,11 @@ a {
   display: none;
 }
 
-.breadcrumb {
-  margin: 20px;
+/* -- containers--  */
+.main {
+  position: absolute;
+  top: 100px;
 }
-
 .masthead {
   background: url("../img/harli-marten-unsplash.jpg");
   background-position: center;
@@ -214,11 +216,42 @@ a {
   bottom: 6%;
   width: 100%;
 }
+.eslogan {
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-left: 48px;
+  position: absolute;
+  width: 1061px;
+  height: 172px;
+  top: 27px;
+}
+.container-cards {
+  margin-bottom: 150px !important;
+}
 
+/* -- grids--  */
+.col-sm-8 {
+  height: 1300px;
+}
+.col-3 {
+  width: 50%;
+}
+
+/* -- components --  */
+.breadcrumb {
+  margin: 20px;
+}
+.card {
+  box-shadow: inset 0px 4px 10px rgba(241, 244, 245, 0.05);
+  filter: drop-shadow(0px 4px 20px rgba(50, 51, 51, 0.05));
+  border-radius: 8px !important;
+  height: 375px;
+  margin: 15px 0px 15px 60px;
+}
+/* -- text --  */
 .masthead h1 {
   position: absolute;
   left: 15px;
-  /* right: 17.19%; */
   top: -20px;
   font-weight: 400 !important;
   font-size: 1.5rem !important;
@@ -239,16 +272,6 @@ a {
   box-shadow: 0px 4px 15px rgba(50, 51, 51, 0.2);
 }
 
-.eslogan {
-  /* background: transparent; */
-  border-radius: 5px;
-  padding-top: 50px;
-  padding-left: 48px;
-  position: absolute;
-  width: 1061px;
-  height: 172px;
-  top: 27px;
-}
 .masthead h2 {
   font-family: Inter;
   font-style: normal;
@@ -259,7 +282,26 @@ a {
   text-transform: uppercase;
   text-align: left;
 }
+.card-title {
+  margin: 10px 0px !important;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.card-text {
+  margin: 10px 0px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.subtitulo-encuesta {
+  margin-top: 20px !important;
+  margin-left: 0px !important;
+  border: 1px solid #4d4f4f;
+  border-style: hidden hidden solid hidden;
+}
 
+/* -- buttons --  */
 .CTA-btn {
   position: absolute;
   top: 60%;
@@ -269,7 +311,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .btn-primary {
   background-color: #4c4dab !important;
   border: #4c4dab !important;
@@ -284,7 +325,6 @@ a {
   background-color: #fddc22 !important;
   color: #4c4dab;
 }
-
 #myBtn {
   display: none;
   position: fixed;
@@ -300,49 +340,6 @@ a {
   cursor: pointer;
   border-radius: 4px;
 }
-.volver {
-  margin: 50px 20px;
-  color: #4c4dab;
-}
-
-.col-sm-8 {
-  height: 1300px;
-}
-
-.card {
-  box-shadow: inset 0px 4px 10px rgba(241, 244, 245, 0.05);
-  filter: drop-shadow(0px 4px 20px rgba(50, 51, 51, 0.05));
-  border-radius: 8px !important;
-  height: 375px;
-  margin: 15px 0px 15px 60px;
-}
-.card-img-top {
-  margin: 0px !important;
-  padding: 0px !important;
-  height: 135px;
-}
-.card-title {
-  margin: 10px 0px !important;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-.subtitulo-encuesta {
-  margin-top: 20px !important;
-  margin-left: 0px !important;
-  border: 1px solid #4d4f4f;
-  border-style: hidden hidden solid hidden;
-}
-.container-cards {
-  margin-bottom: 150px !important;
-}
-
-.card-text {
-  margin: 10px 0px !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
-}
 .card-btn {
   margin: 10px 0px 10px 7px !important;
   width: 150px !important;
@@ -350,15 +347,23 @@ a {
   padding: 4px 0px 2px 0px !important;
   font-size: 1rem !important;
 }
-.col-3 {
-  width: 50%;
+
+/* -- links --  */
+.volver {
+  margin: 50px 20px;
+  color: #4c4dab;
 }
-/*  Images */
+
+/*  --  images -- */
+.card-img-top {
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 135px;
+}
 .bannerTertiary {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-
 .rounded-circle {
   width: 150px;
   height: 150px;
@@ -384,7 +389,38 @@ a {
   color: white;
   text-align: center;
 }
+.work-in-progress-s {
+  width: 100%;
+  border-radius: 8px;
+}
+.work-in-progress-m {
+  display: none;
+}
 
+/* -- Icons --  */
+.icon {
+  color: #323333;
+  stroke-width: 1.5px;
+  padding: 3px;
+  border: 1.5px solid #323333;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30%;
+}
+.share-2 {
+  margin-left: 30px;
+}
+.chevron-up {
+  border: none;
+  margin: 3px 3px;
+  top: 0px;
+  left: 0px;
+  color: #fff;
+}
+
+/*  --  footer -- */
 .footer {
   background-color: #323333;
   color: #f1f4f5;
@@ -419,29 +455,6 @@ a {
   display: inline-block;
 }
 
-/* Icons  */
-.icon {
-  color: #323333;
-  stroke-width: 1.5px;
-  padding: 3px;
-  border: 1.5px solid #323333;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 30%;
-}
-.share-2 {
-  margin-left: 30px;
-}
-.chevron-up {
-  border: none;
-  margin: 3px 3px;
-  top: 0px;
-  left: 0px;
-  color: #fff;
-}
-
 /* 
 --------------------
 MediaQuery
@@ -453,6 +466,9 @@ MediaQuery
   h1,
   h2 {
     color: #f1f4f5 !important;
+  }
+  .main {
+    left: 25px;
   }
   .masthead {
     top: 8.19%;
@@ -529,6 +545,7 @@ MediaQuery
 
 /*  laptop */
 @media (min-width: 1200px) {
+  /* -- Navigation --  */
   .navbar-icon {
     display: inline-flex !important;
   }
@@ -547,23 +564,17 @@ MediaQuery
     font-size: 0.875rem;
   }
 
-  .margin-estudio {
-    margin-top: 7px;
+  /* -- containers--  */
+  .main {
+    position: absolute;
+    top: 100px;
+    left: 120px;
   }
-
   .masthead {
     left: 0px;
     top: 8.19%;
     bottom: 4.91%;
     width: 100%;
-  }
-  .masthead h1 {
-    position: absolute;
-    left: 17.09%;
-    right: 17.19%;
-    top: 8%;
-    font-weight: 600 !important;
-    font-size: 1.75rem !important;
   }
   .eslogan {
     position: absolute;
@@ -571,6 +582,52 @@ MediaQuery
     height: 150px;
     top: 30%;
     line-height: 100px !important;
+  }
+  .container-bn3 {
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    margin: 0px;
+    height: 350px;
+  }
+
+  /* -- grids--  */
+  .col-sm-8 {
+    height: auto !important;
+    width: 66.6%;
+  }
+  .col-sm-4 {
+    width: 33.3%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+
+  /* -- components--  */
+  .margin-estudio {
+    margin-top: 7px;
+  }
+  .breadcrumb {
+    margin: 20px;
+  }
+  .breadcrumb-item {
+    font-size: 0.875rem;
+  }
+  .intro {
+    margin: 50px 20px !important;
+  }
+  .card {
+    margin: 0px;
+  }
+
+  /* -- text --  */
+  .masthead h1 {
+    position: absolute;
+    left: 25%;
+    right: 17.19%;
+    top: 8%;
+    font-weight: 600 !important;
+    font-size: 1.75rem !important;
   }
   .masthead h2 {
     display: inline-block;
@@ -584,54 +641,9 @@ MediaQuery
     background: none;
     box-shadow: none;
     font-size: 20px !important;
-    line-height: 36px;
+    line-height: 36px !important;
+    margin: 10px !important;
   }
-
-  .CTA-btn-container {
-    position: absolute;
-    top: 65%;
-  }
-  .CTA-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .btn-primary {
-    background-color: #4c4dab !important;
-    border: #4c4dab !important;
-    border-radius: 8px;
-    padding: 15px 25px 25px 25px !important;
-    width: 225px;
-    height: 60px;
-    filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
-    font-size: 1.125rem;
-  }
-  .familias {
-    float: right;
-  }
-  .profesionales {
-    float: left;
-  }
-
-  #myBtn {
-    left: 1150px !important;
-    top: 675px !important;
-  }
-
-  #myBtn:hover {
-    background-color: #fddc22;
-  }
-
-  .breadcrumb {
-    margin: 20px;
-  }
-  .breadcrumb-item {
-    font-size: 0.875rem;
-  }
-
   .main h1 {
     color: #323333 !important;
     font-size: 1.25rem;
@@ -655,32 +667,44 @@ MediaQuery
     line-height: 28px;
     margin: 30px;
   }
-  .volver {
-    margin: 50px 20px;
-    color: #4c4dab;
-  }
-  .main img {
-    display: block;
-    width: 45%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-  }
-  .col-sm-8 {
-    height: auto !important;
-    width: 66.6%;
-  }
-  .col-sm-4 {
-    width: 33.3%;
-  }
 
-  .intro {
-    margin: 50px 20px !important;
+  /* -- buttons--  */
+  .CTA-btn-container {
+    position: absolute;
+    top: 65%;
   }
-
-  .card {
-    margin: 0px;
+  .CTA-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    left: -20px;
   }
-
+  .btn-primary {
+    background-color: #4c4dab !important;
+    border: #4c4dab !important;
+    border-radius: 8px;
+    padding: 15px 25px 25px 25px !important;
+    width: 225px;
+    height: 60px;
+    filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
+    font-size: 1.125rem;
+  }
+  .familias {
+    float: right;
+  }
+  .profesionales {
+    float: left;
+  }
+  #myBtn {
+    left: 1150px !important;
+    top: 675px !important;
+  }
+  #myBtn:hover {
+    background-color: #fddc22;
+  }
   .card-btn {
     margin: 10px 0px 10px 7px !important;
     width: 150px !important;
@@ -689,27 +713,31 @@ MediaQuery
     font-size: 1rem !important;
   }
 
-  .col-3 {
-    width: 25%;
+  /* -- links--  */
+  .volver {
+    color: #4c4dab;
+  }
+
+  /*  -- Images -- */
+  .main img {
+    display: block;
+    width: 45%;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
   .rounded-circle {
     width: 200px !important;
     height: 200px !important;
   }
-  /*  Images menu */
+  .bannerTertiary {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
   .txt-centered {
     position: relative;
   }
   .txt-centered > img {
     position: absolute;
-    /* top: 47%;
-  left: 19%;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  color: white;
-  background: rgba(76, 77, 171, 0.6);
-  border-radius: 0px 0px 150px 150px;
-  padding: 10px 43px; */
   }
   .overlay-text {
     text-transform: uppercase;
@@ -720,7 +748,18 @@ MediaQuery
     bottom: 5px;
     max-width: 200px;
   }
+  .work-in-progress-s {
+    display: none !important;
+  }
+  .work-in-progress-m {
+    width: 100% !important;
+    height: 50% !important;
+    margin: 0px auto 0px auto !important;
+    padding: 0px;
+    border-radius: 8px;
+  }
 
+  /* -- footer -- */
   .footer-menu ul {
     text-align: right;
     margin: 0;
