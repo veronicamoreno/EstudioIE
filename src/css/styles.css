@@ -250,6 +250,7 @@ a {
 /* -- components --  */
 .breadcrumb {
   margin: 20px;
+  line-height: 24px;
 }
 .card {
   box-shadow: inset 0px 4px 10px rgba(241, 244, 245, 0.05);
