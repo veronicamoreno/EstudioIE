@@ -219,7 +219,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   left: 0%;
   right: 0%;
   top: 12%;
