@@ -248,6 +248,7 @@ a {
 }
 
 /* -- components --  */
+
 .breadcrumb {
   margin: 20px;
   line-height: 24px;
@@ -423,31 +424,33 @@ a {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-.rounded-circle {
+.circle-img {
   width: 150px;
   height: 150px;
   text-align: center;
   color: #323333;
   margin: 20px 0px;
-}
-.txt-centered {
   position: relative;
+  top: 0;
+  left: 0;
 }
-.txt-centered > img {
+.overlay {
   position: absolute;
-}
-.overlay-text {
-  position: absolute;
-  bottom: 43px;
-  left: 15px;
-  max-width: 200px;
-  padding: 10px 30px;
+  left: 87px;
+  top: 62%;
+  height: 100px;
+  width: 153px;
+  transform: translate(-50%, -50%);
+  border-radius: 0 0 150px 150px;
   background: rgba(76, 77, 171, 0.6);
-  border-radius: 0px 0px 155px 155px;
+  clip-path: polygon(0 48%, 100% 48%, 100% 79%, 75% 91%, 24% 91%, 0 75%);
+  padding-top: 62px;
+  font-size: 13px;
   text-transform: uppercase;
   color: white;
   text-align: center;
 }
+
 .work-in-progress-s {
   width: 100%;
   border-radius: 8px;
@@ -793,29 +796,26 @@ MediaQuery
     margin-top: 50px;
     margin-bottom: 100px;
   }
-  .rounded-circle {
-    width: 200px !important;
+  .circle-img {
     height: 200px !important;
+    width: 200px !important;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .overlay {
+    top: 78%;
+    left: 50%;
+    height: 100px;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: 600;
   }
   .bannerTertiary {
     margin-top: 0px !important;
     margin-bottom: 100px !important;
   }
-  .txt-centered {
-    position: relative;
-  }
-  .txt-centered > img {
-    position: absolute;
-  }
-  .overlay-text {
-    text-transform: uppercase;
-    color: white;
-    background: rgba(76, 77, 171, 0.6);
-    border-radius: 0px 0px 150px 150px;
-    padding: 10px 55px;
-    bottom: 5px;
-    max-width: 200px;
-  }
+
   .work-in-progress-s {
     display: none !important;
   }
