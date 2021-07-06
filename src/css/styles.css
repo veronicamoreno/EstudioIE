@@ -42,15 +42,21 @@ p {
   line-height: 28px;
   margin: 20px;
 }
+
 b {
   font-weight: 600 !important;
 }
+
 nav {
   background-color: #fff;
 }
 
 a {
   color: #4c4dab;
+}
+
+li {
+  margin-bottom: 20px;
 }
 
 /* -- Navigation --  */
@@ -211,7 +217,7 @@ a {
 
 .main {
   position: absolute;
-  top: 100px;
+  top: 120px;
 }
 .masthead {
   background: url("../img/harli-marten-unsplash.jpg");
@@ -238,7 +244,13 @@ a {
 .container-cards {
   margin-bottom: 150px !important;
 }
-
+.circle-img-menu {
+  position: static;
+}
+.banner {
+  position: static;
+  bottom: 0px;
+}
 /* -- grids--  */
 .col-sm-8 {
   height: 1300px;
@@ -262,7 +274,6 @@ a {
 }
 .cookiealert {
   position: fixed;
-  /* top: 500px; */
   bottom: 10%;
   left: 0;
   width: 100%;
@@ -278,14 +289,12 @@ a {
   background: #7f8182;
   line-height: 28px;
 }
-
 .cookiealert.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0%);
   transition-delay: 1000ms;
 }
-
 .cookiealert .acceptcookies {
   margin-left: 10px;
   vertical-align: baseline;
@@ -300,7 +309,9 @@ a {
   font-size: 1.5rem !important;
   line-height: 45px !important;
   color: #f1f4f5;
-  margin: 30px 20px !important;
+  margin: 30px 0px !important;
+  text-align: center;
+
 }
 .txt-primary {
   width: 100%;
@@ -346,6 +357,15 @@ a {
 .mt-2 {
   line-height: 28px;
 }
+.list-style,
+.circle-bullet {
+  line-height: 32px;
+  padding-left: 30px;
+}
+}
+.circle-bullet {
+  list-style-type: circle;
+}
 
 /* -- buttons --  */
 .CTA-btn {
@@ -375,7 +395,7 @@ a {
   display: none;
   position: fixed;
   left: 340px;
-  top: 650px;
+  top: 550px;
   width: 37.01px;
   height: 40px;
   z-index: 99;
@@ -444,7 +464,7 @@ a {
   border-radius: 0 0 150px 150px;
   background: rgba(76, 77, 171, 0.6);
   clip-path: polygon(0 48%, 100% 48%, 100% 79%, 75% 91%, 24% 91%, 0 75%);
-  padding-top: 62px;
+  padding-top: 60px;
   font-size: 13px;
   text-transform: uppercase;
   color: white;
@@ -546,7 +566,7 @@ MediaQuery
     font-weight: 600 !important;
     font-size: 2rem !important;
     line-height: 45px !important;
-    text-align: left !important;
+    /* text-align: left !important; */
   }
   .eslogan {
     background: rgba(50, 51, 51, 0.3);
@@ -646,7 +666,6 @@ MediaQuery
   }
   .container-bn3 {
     position: absolute;
-    /* top: 550px; */
     left: 0px;
     margin: 0px;
     height: 350px;
@@ -671,10 +690,10 @@ MediaQuery
   .margin-estudio {
     margin-top: 7px;
   }
-  .breadcrumb {
+  /* .breadcrumb {
     margin: 20px 0px;
     position: absolute;
-  }
+  } */
   .breadcrumb-item {
     font-size: 0.875rem;
   }
@@ -688,7 +707,7 @@ MediaQuery
   /* -- text --  */
   .masthead h1 {
     position: absolute;
-    left: 25%;
+    /* left: 25%; */
     right: 17.19%;
     top: 8%;
     font-weight: 600 !important;
@@ -724,13 +743,24 @@ MediaQuery
     font-weight: bold;
     margin: 75px 20px 20px 20px;
   }
-  .main p {
+  .main p,
+  .list-style,
+  .circle-bullet {
     color: #323333 !important;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;
     margin: 30px;
+  }
+  .cookies li{
+   margin-left: 30px;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 28px;
+  }
+  #objetivos{
+    margin-top: 0px !important;
   }
 
   /* -- buttons--  */
@@ -797,19 +827,21 @@ MediaQuery
     margin-bottom: 100px;
   }
   .circle-img {
-    height: 200px !important;
-    width: 200px !important;
+    height: 150px !important;
+    width: 150px !important;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 20%;
     left: 50%;
   }
   .overlay {
-    top: 78%;
+    top: 48%;
     left: 50%;
-    height: 100px;
-    width: 200px;
+    height: 80px;
+    width: 153px;
     text-transform: uppercase;
     font-weight: 600;
+    padding-top: 45px;
+
   }
   .bannerTertiary {
     margin-top: 0px !important;
@@ -840,6 +872,8 @@ MediaQuery
 
 /*  desktop */
 @media (min-width: 1400px) {
+
+  /* -- navigation--  */
   .dropdown-menu {
     position: absolute;
     right: 120px !important;
@@ -851,17 +885,28 @@ MediaQuery
     text-align: left;
     list-style: none;
     background-color: transparent !important;
-    /* background-clip: padding-box; */
     border: none !important;
   }
 
   .dropdown-item {
     font-size: 0.875rem;
   }
-
-  .masthead h1 {
+  .secondary-navbar {
+    right: 550px;
+  }
+    /* -- containers--  */
+  .main {
+    left: 320px;
+  }
+    .eslogan {
     position: absolute;
-    top: 10%;
+    width: 1061px;
+    height: 200px;
+    top: 33%;
+  }
+
+    /* -- text--  */
+  .masthead h1 {
     font-size: 2rem !important;
   }
 
@@ -871,13 +916,21 @@ MediaQuery
     line-height: 40px !important;
     padding-left: 30px;
   }
-
-  .eslogan {
-    position: absolute;
-    width: 1061px;
-    height: 200px;
-    top: 33%;
+  .main p,
+  .list-style,
+  .circle-bullet {
+    margin: 15px;
   }
+
+  /* -- buttons -- */
+    #myBtn {
+    left: 1375px !important;
+    top: 820px !important;
+  }
+
+/*  -- images --  */
+.bannerTertiary {
+    margin-top: 30px !important;
 }
 
 /*
