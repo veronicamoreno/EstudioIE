@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>Interrupción respetuosa del embarazo</title>
     <meta charset="UTF-8" />
@@ -29,110 +29,174 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-<!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-  
-<!-- Stylesheet -->
-<link href="src/css/styles.css" rel="stylesheet" type="text/css" />
-</head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link href="src/css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
 
   <body class="index">
+    <!-- Scrollup-->
+    <button onclick="topFunction()" id="myBtn" title="subir">
+      <i class="icon chevron-up" data-feather="chevron-up"></i>
+    </button>
 
-      <!-- Scrollup-->
-    <button onclick="topFunction()" id="myBtn" title="subir"><i class="icon chevron-up"  data-feather="chevron-up"></i></button>
-
-      <!-- Primary navigation bar-->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 text-uppercase" id="mainNav">
-            <div class="container px-2 ">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="src/img/Logo.png" alt="logo" width="250"/></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item"><a class="nav-link active" href="estudio.html">Estudio</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item hide"><a class="nav-link" href="encuestas.html">Encuestas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item hide"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item hide"><a class="nav-link" href="resultados.html">Resultados</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="nav-item"><a class="nav-link" href="recursos.html">Documentos</a></li>
-                        <li class="nav-item navbar-icon"><a class="nav-link" href="mailto:testimoniosie@gmail.com" target="_blank"><i class="icon"  data-feather="mail"></i></a></li>
-                        <li class="nav-item navbar-icon"><a class="nav-link" href="#" ><i class="icon share-2"  data-feather="share-2"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <!-- Primary navigation bar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-2 text-uppercase"
+      id="mainNav"
+    >
+      <div class="container px-2">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo" src="src/img/Logo.png" alt="logo" width="250"
+        /></a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="estudio.html">Estudio</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li class="nav-item hide">
+              <a class="nav-link" href="encuestas.html">Encuestas</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li class="nav-item hide">
+              <a class="nav-link" href="testimonios.html">Testimonios</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li class="nav-item hide">
+              <a class="nav-link" href="resultados.html">Resultados</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li class="nav-item">
+              <a class="nav-link" href="recursos.html">Documentos</a>
+            </li>
+            <li class="nav-item navbar-icon">
+              <a
+                class="nav-link"
+                href="mailto:testimoniosie@gmail.com"
+                target="_blank"
+                ><i class="icon" data-feather="mail"></i
+              ></a>
+            </li>
+            <li class="nav-item navbar-icon">
+              <a class="nav-link" href="#">
+                <i class="icon share-2" data-feather="share-2"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Masthead-->
-        <header class="masthead">
-            <div class=".container-fluid px-4 px-lg-5 m-5 ">
-                <div class="row gx-4 gx-lg-5 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 ">
-                        <h1 >Tu testimonio puede cambiar las cosas.</h1>
-                        <!-- <hr class="divider" /> -->
-                    </div>
-                    <div class="eslogan col-lg-8 align-self-baseline">
-                        <h2>Estudio exploratorio sobre las condiciones actuales en que se producen las intervenciones relacionadas con las Interrupciones de Embarazo en España.</h2>
-                    </div>
+    <header class="masthead">
+      <div class=".container-fluid px-4 px-lg-5 m-5">
+        <div
+          class="
+            row
+            gx-4 gx-lg-5
+            align-items-center
+            justify-content-center
+            text-center
+          "
+        >
+          <div class="col-lg-8">
+            <h1>Tu testimonio puede cambiar las cosas.</h1>
+            <!-- <hr class="divider" /> -->
+          </div>
+          <div class="eslogan col-lg-8 align-self-baseline">
+            <h2>
+              Estudio exploratorio sobre las condiciones actuales en que se
+              producen las intervenciones relacionadas con las Interrupciones de
+              Embarazo en España.
+            </h2>
+          </div>
 
-                    <div class="container CTA-btn-container">
-                        <div class="row CTA-btn">
-                             <div class="col-md-6">
-                                <a class="btn btn-primary familias btn-block " href="encuestas.html">Mujeres y Familias</a>
-                                </div>
-                             <div class="col-md-6">
-                                <a class="btn btn-primary profesionales btn-block" href="https://docs.google.com/forms/d/e/1FAIpQLSe4GgjJQXuMRwPWqhW65c4kIxZH-7TQHYqpkq9mHP_ulqLQzQ/viewform" target="_blank">Profesionales</a></div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container CTA-btn-container">
+            <div class="row CTA-btn">
+              <div class="col-md-6">
+                <a
+                  class="btn btn-primary familias btn-block"
+                  href="encuestas.html"
+                  >Mujeres y Familias</a
+                >
+              </div>
+              <div class="col-md-6">
+                <a
+                  class="btn btn-primary profesionales btn-block"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe4GgjJQXuMRwPWqhW65c4kIxZH-7TQHYqpkq9mHP_ulqLQzQ/viewform"
+                  target="_blank"
+                  >Profesionales</a
+                >
+              </div>
             </div>
-        </header>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<!-- Cookie Consent Alert  -->
-<div class="alert text-center cookiealert" role="alert">
-    &#x1F36A; Esta web utiliza cookies de terceros para analizar el tráfico del sitio. Al clicar en «Acepto» aceptas su uso. <a href="cookies.html" target="_blank">Ver Política de Cookies.</a>
+    <!-- Cookie Consent Alert  -->
+    <div class="alert text-center cookiealert" role="alert">
+      &#x1F36A; Esta web utiliza cookies de terceros para analizar el tráfico
+      del sitio. Al clicar en «Acepto» aceptas su uso.
+      <a href="cookies.html" target="_blank">Ver Política de Cookies.</a>
 
-    <button type="button" class="btn btn-cookies btn-sm acceptcookies">
+      <button type="button" class="btn btn-cookies btn-sm acceptcookies">
         Acepto
-    </button>
-</div>
+      </button>
+    </div>
 
-<!-- Footer-->
-<footer class="footer fixed-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span> © estudioie.es   2021</span>
-                    </div>
-                    <!-- End Col -->
-                    <div class="col-md-6">
-                        <div class="footer-menu">
-                            <ul>
-                                <li>
-                                    <a href="privacidad.html">Politica de privacidad</a> |
-                                </li>
-                                <li>
-                                    <a href="cookies.html">Cookies</a> |
-                                </li>
-                                <li>
-                                    <a href="https://veronicamoreno.me/" target="_blank">Diseño</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End col -->
-                </div>
-                <!-- End Row -->
-              </footer>
-
-
-
+    <!-- Footer-->
+    <footer class="footer fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span> © estudioie.es 2021</span>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-6">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="privacidad.html">Politica de privacidad</a> |</li>
+                <li><a href="cookies.html">Cookies</a> |</li>
+                <li>
+                  <a href="https://veronicamoreno.me/" target="_blank"
+                    >Diseño</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </footer>
 
     <!-- jQuery first -->
     <script
@@ -141,18 +205,24 @@
       crossorigin="anonymous"
     ></script>
 
-     <!-- Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Separate Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Feather icons-->
     <script>
-      feather.replace()
+      feather.replace();
     </script>
 
- <!-- Core theme JS-->
-        <script src="src/js/scripts.js"></script>
-        
-
+    <!-- Core theme JS-->
+    <script src="src/js/scripts.js"></script>
   </body>
 </html>
