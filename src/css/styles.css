@@ -255,6 +255,9 @@ li {
   position: static;
   bottom: 0px;
 }
+.section {
+  overflow: scroll;
+}
 /* -- grids--  */
 .col-sm-8 {
   height: 1300px;
@@ -703,7 +706,6 @@ MediaQuery
     margin: 0px auto;
     position: absolute;
     top: 150px;
-    overflow: scroll;
   }
   .circle-img-menu {
     margin-top: 45px;
