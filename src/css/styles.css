@@ -371,6 +371,9 @@ li {
 .circle-bullet {
   list-style-type: circle;
 }
+.faqs hr {
+  margin: 40px 0px 0px;
+}
 .faqs h3 {
   font-size: 1.125rem;
   text-align: left;
