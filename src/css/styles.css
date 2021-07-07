@@ -615,6 +615,9 @@ MediaQuery
   .cookies li {
     line-height: 28px;
   }
+  .faqs hr {
+    display: none;
+  }
 
   /* -- buttons --   */
   .CTA-btn {
