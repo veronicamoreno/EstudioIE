@@ -546,10 +546,7 @@ MediaQuery
 
 /*  tablet */
 @media (min-width: 576px) {
-  h1,
-  h2 {
-    color: #f1f4f5 !important;
-  }
+  /*  -- container --  */
   .main {
     left: 25px;
   }
@@ -559,16 +556,6 @@ MediaQuery
     left: 6px;
     width: 100%;
   }
-  .masthead h1 {
-    position: absolute;
-    left: 17.09%;
-    right: 17.19%;
-    top: 8%;
-    font-weight: 600 !important;
-    font-size: 2rem !important;
-    line-height: 45px !important;
-    /* text-align: left !important; */
-  }
   .eslogan {
     background: rgba(50, 51, 51, 0.3);
     position: absolute;
@@ -577,6 +564,32 @@ MediaQuery
     line-height: 150px;
     top: 30%;
   }
+  .container-cards {
+    margin: 0px;
+  }
+
+  /* -- grid -- */
+  .col-sm-8 {
+    width: 100%;
+    height: 475px;
+  }
+
+  /*  -- components --   */
+  .card {
+    margin: 0px;
+  }
+
+  /*  -- text -- */
+  .masthead h1 {
+    position: absolute;
+    left: 17.09%;
+    right: 17.19%;
+    top: 8%;
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+    line-height: 45px !important;
+  }
+
   .masthead h2 {
     font-weight: 400;
     font-size: 1.5rem !important;
@@ -584,6 +597,16 @@ MediaQuery
     padding: 0px;
     margin: 0px;
   }
+  .main h1,
+  .main h2,
+  .main p {
+    color: #323333 !important;
+  }
+  .cookies li {
+    line-height: 28px;
+  }
+
+  /* -- buttons --   */
   .CTA-btn {
     position: absolute;
     top: 70%;
@@ -599,23 +622,16 @@ MediaQuery
     left: 720px;
     top: 875px;
   }
-  .main h1,
-  .main h2,
-  .main p {
-    color: #323333 !important;
+
+  /*   -- images -- */
+  .circle-img {
+    margin: 20px 70px;
+  }
+  .overlay {
+    margin: 0px 70px;
   }
 
-  .col-sm-8 {
-    width: 100%;
-    height: 475px;
-  }
-  .container-cards {
-    margin: 0px;
-  }
-  .card {
-    margin: 0px;
-  }
-
+  /*  -- footer -- */
   .footer span {
     text-align: left;
     margin-top: 25px;
@@ -683,12 +699,14 @@ MediaQuery
     height: 350px;
   }
   .section {
-    /* margin-top: 100px; */
     width: 90%;
     margin: 0px auto;
+    position: absolute;
+    top: 150px;
+    overflow: scroll;
   }
   .circle-img-menu {
-    margin-top: 70px;
+    margin-top: 45px;
   }
 
   /* -- grids--  */
@@ -724,7 +742,6 @@ MediaQuery
   /* -- text --  */
   .masthead h1 {
     position: absolute;
-    /* left: 25%; */
     right: 17.19%;
     top: 8%;
     font-weight: 600 !important;
@@ -739,15 +756,15 @@ MediaQuery
     margin: 0px;
   }
   .txt-primary {
-    background: none;
+    /* background: none; */
     box-shadow: none;
     font-size: 20px !important;
     line-height: 36px !important;
-    margin: 20px 0px !important;
+    margin: 0px 20px !important;
   }
   .main h1 {
     color: #323333 !important;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-transform: uppercase;
     margin: 50px 20px 20px 20px;
   }
@@ -847,6 +864,7 @@ MediaQuery
     transform: translate(-50%, -50%);
     top: 20%;
     left: 50%;
+    margin: 0px;
   }
   .overlay {
     top: 48%;
@@ -856,6 +874,7 @@ MediaQuery
     text-transform: uppercase;
     font-weight: 600;
     padding-top: 45px;
+    margin: 0px;
   }
   .bannerTertiary {
     margin-top: 0px !important;
