@@ -625,6 +625,10 @@ MediaQuery
 /*  laptop */
 @media (min-width: 1200px) {
   /* -- Navigation --  */
+  li.nav-item {
+    margin: 0px;
+  }
+
   .navbar-icon {
     display: inline-flex !important;
   }
