@@ -35,6 +35,7 @@ h2 {
   text-transform: uppercase;
   margin-top: 40px;
   margin-left: 20px;
+  scroll-margin-top: 200px;
 }
 
 p {
@@ -240,6 +241,9 @@ li {
   width: 1061px;
   height: 172px;
   top: 27px;
+}
+.estudio {
+  margin-top: 100px;
 }
 .container-cards {
   margin-bottom: 150px !important;
@@ -639,7 +643,7 @@ MediaQuery
   .secondary-navbar {
     display: inline-flex !important;
     position: absolute;
-    right: 200px;
+    right: 175px;
     margin-top: 10px;
   }
 
@@ -679,7 +683,12 @@ MediaQuery
     height: 350px;
   }
   .section {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    width: 90%;
+    margin: 0px auto;
+  }
+  .circle-img-menu {
+    margin-top: 70px;
   }
 
   /* -- grids--  */
@@ -801,7 +810,7 @@ MediaQuery
   }
   #myBtn {
     left: 1150px !important;
-    top: 675px !important;
+    top: 490px !important;
   }
   #myBtn:hover {
     background-color: #fddc22;
