@@ -371,6 +371,13 @@ li {
 .circle-bullet {
   list-style-type: circle;
 }
+.faqs h3 {
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 80px;
+  font-style: italic;
+  font-weight: 600;
+}
 
 /* -- buttons --  */
 .CTA-btn {
