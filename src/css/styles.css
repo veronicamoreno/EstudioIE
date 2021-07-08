@@ -59,10 +59,6 @@ li {
   margin-bottom: 20px;
 }
 
-/* div {
-  scroll-margin-top: 200px;
-} */
-
 /* -- Navigation --  */
 .navbar {
   position: fixed;
@@ -216,12 +212,15 @@ li {
   position: fixed;
   margin: 0px;
   padding: 0px;
-  top: 85px;
+  top: 88px;
 }
 
 .main {
   position: absolute;
   top: 120px;
+}
+.main.fixed-top {
+  background: aquamarine;
 }
 .masthead {
   background: url("../img/harli-marten-unsplash.jpg");
@@ -596,9 +595,9 @@ MediaQuery
   .container-cards {
     margin: 0px;
   }
-  .inicio {
+  /* .inicio {
     margin-left: 20px !important;
-  }
+  } */
 
   /* -- grid -- */
   .col-sm-8 {
@@ -713,6 +712,8 @@ MediaQuery
   }
   .header {
     height: 75px;
+    left: 125px;
+    background: #ffffff;
   }
   .masthead {
     left: 0px;
@@ -745,10 +746,10 @@ MediaQuery
   /* -- grids--  */
   .col-sm-8 {
     height: auto !important;
-    width: 66.6%;
+    width: 80%;
   }
   .col-sm-4 {
-    width: 33.3%;
+    width: 20%;
   }
   .col-3 {
     width: 25%;
@@ -793,7 +794,7 @@ MediaQuery
     box-shadow: none;
     font-size: 20px !important;
     line-height: 36px !important;
-    margin: 0px 20px !important;
+    margin: 0px 0px !important;
   }
   .main h1 {
     color: #323333 !important;
@@ -828,6 +829,10 @@ MediaQuery
   }
   #objetivos {
     margin-top: 0px !important;
+  }
+  .preguntas h3 {
+    font-size: 1.25rem;
+    margin: 50px 20px 100px;
   }
 
   /* -- buttons--  */
@@ -970,6 +975,9 @@ MediaQuery
     height: 200px;
     top: 33%;
   }
+  .header {
+    left: 300px;
+  }
 
   /* -- text--  */
   .masthead h1 {
@@ -1010,6 +1018,9 @@ MediaQuery
   /* -- containers--  */
   .main {
     left: 475px;
+  }
+  .header {
+    left: 500px;
   }
   /*  -- buttons --   */
   #myBtn {
