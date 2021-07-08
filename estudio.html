@@ -115,8 +115,14 @@
 
     <!--main-->
     <main class="container main">
-      <!--header-->
-      <div class="header">
+
+        <!-- Breadcrumb -->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="header">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Estudio</li>
+      </ol>
+    
         <!-- Secondary navigation bar-->
         <div class="container">
           <ul class="nav secondary-navbar">
@@ -131,27 +137,14 @@
             </li>
           </ul>
         </div>
+    </nav>
 
-        <!-- Breadcrumb -->
-        <div class="container ms-0">
-          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Estudio
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-
-      <!-- section -->
-      <div class="container section">
-        <h1 class="txt-primary">
-          Estudio exploratorio sobre las condiciones actuales del proceso de
-          interrupción del embarazo en España.
-        </h1>
-
+     <!-- section -->
+      <section class="container section titulo">
+      <h1 class="txt-primary">Estudio exploratorio sobre las condiciones actuales del proceso de
+          interrupción del embarazo en España.</h1>
+        </section>
+      <section class="container section inicio">
         <!--  imagenes menu  -->
         <div class="container circle-img-menu">
           <div class="row" style="height: 250px">
@@ -466,6 +459,7 @@
           </div>
         </div>
       </div>
+    </section>
     </main>
 
     <!-- Footer-->
