@@ -249,7 +249,7 @@ li {
   background: #ffffff;
 }
 .container-cards {
-  margin-bottom: 150px !important;
+  margin-bottom: 25px !important;
 }
 .circle-img-menu {
   position: static;
@@ -276,11 +276,18 @@ li {
 /* -- grids--  */
 .col-sm-8 {
   height: 1300px;
+  margin-bottom: 150px;
 }
 .col-3 {
   width: 50%;
 }
-
+.logo-asociacion {
+  width: 10%;
+  padding: 10px 0px 20px 0px;
+}
+.asociacion {
+  width: 80%;
+}
 /* -- components --  */
 
 .breadcrumb {
@@ -294,6 +301,25 @@ li {
   height: 375px;
   margin: 15px 0px 15px 60px;
 }
+.card-about {
+  height: 310px;
+  width: 100%;
+  margin-left: 0px !important;
+}
+.row-about {
+  /* height: 50px; */
+  margin: 5px;
+}
+.encabezado {
+  border: none !important;
+  padding: 0px !important;
+}
+.difusion {
+  /* padding-bottom: 75px !important; */
+  margin: 0px auto !important;
+  text-align: center;
+}
+
 .cookiealert {
   position: fixed;
   bottom: 10%;
@@ -369,6 +395,19 @@ li {
   font-size: 14px !important;
   line-height: 18px !important;
 }
+.card-text-about {
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+p.card-text-about {
+  margin: 0px;
+}
+.difusion p {
+  font-size: 0.75rem !important;
+  padding: 0px 0px 50px 0px !important;
+  text-align: center;
+  margin: 0px auto !important;
+}
 .subtitulo-encuesta {
   margin-top: 20px !important;
   margin-left: 0px !important;
@@ -395,6 +434,14 @@ li {
   margin: 80px 0px;
   font-style: italic;
   font-weight: 600;
+}
+.card h5 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding-top: 20px;
+}
+.card h6 {
+  font-size: 0.75rem;
 }
 
 /* -- buttons --  */
@@ -469,6 +516,12 @@ li {
   padding: 0px !important;
   height: 135px;
 }
+.about-img {
+  margin: 0px 0px 10px 0px !important;
+  padding: 0px !important;
+  filter: drop-shadow(0px 4px 15px rgba(50, 51, 51, 0.25));
+}
+
 .bannerTertiary {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -529,6 +582,27 @@ li {
   top: 0px;
   left: 0px;
   color: #fff;
+}
+.contacto-icon {
+  color: #ffffff;
+  stroke-width: 1.5px;
+  padding: 3px;
+  border: 1px solid #ffffff;
+  background: #4c4dab;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin: 0px 20px 0px 30px;
+}
+.socialmedia {
+  color: #4c4dab;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  stroke-width: 1px;
+}
+.socialmedia:hover {
+  color: #fddc22;
 }
 
 /*  --  footer -- */
@@ -595,9 +669,9 @@ MediaQuery
   .container-cards {
     margin: 0px;
   }
-  /* .inicio {
-    margin-left: 20px !important;
-  } */
+  .last-card {
+    width: 51%;
+  }
 
   /* -- grid -- */
   .col-sm-8 {
@@ -639,6 +713,18 @@ MediaQuery
   .faqs hr {
     display: none;
   }
+  .card h5 {
+    font-size: 1rem;
+  }
+  .card-text-about {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    padding: 25px 0px 5px 0px !important;
+  }
+  .difusion p {
+    text-align: center !important;
+    padding-bottom: 0px !important;
+  }
 
   /* -- buttons --   */
   .CTA-btn {
@@ -664,6 +750,10 @@ MediaQuery
   .overlay {
     margin: 0px 70px;
   }
+  .difusion img {
+    background-color: coral;
+  }
+  /*  -- icons -- */
 
   /*  -- footer -- */
   .footer span {
@@ -738,6 +828,7 @@ MediaQuery
     width: 90%;
     margin: 0px auto;
     position: absolute;
+    padding-bottom: 100px;
   }
   .circle-img-menu {
     margin-top: 45px;
@@ -771,6 +862,18 @@ MediaQuery
   }
   .card {
     margin: 0px;
+  }
+  .card-about {
+    height: 250px;
+    width: 100%;
+  }
+  .row-about {
+    height: 50px;
+    margin: 5px;
+  }
+  .encabezado {
+    border: none !important;
+    padding: 0px !important;
   }
 
   /* -- text --  */
@@ -914,6 +1017,9 @@ MediaQuery
     padding-top: 45px;
     margin: 0px;
   }
+  .difusion img {
+    margin: 30px auto 5px !important;
+  }
   .bannerTertiary {
     margin-top: 0px !important;
     margin-bottom: 100px !important;
@@ -1026,6 +1132,10 @@ MediaQuery
   #myBtn {
     left: 1515px !important;
     top: 920px !important;
+  }
+  /* -- text --  */
+  .card-text-about {
+    padding: 60px 0px 5px 0px !important;
   }
 }
 
