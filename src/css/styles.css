@@ -172,7 +172,11 @@ li {
 }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-  color: #323333;
+  color: #4c4dab;
+  font-weight: 600;
+  background: #fddc22;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 15px rgba(50, 51, 51, 0.25));
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: #323333;
@@ -195,6 +199,11 @@ li {
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
   color: #323333;
+  font-weight: 600 !important;
+}
+.navbar-nav > .active > a {
+  color: #4c4dab !important;
+  font-weight: bold !important;
 }
 
 .navbar-icon {
@@ -539,6 +548,7 @@ p.card-text-about {
   position: relative;
   top: 0;
   left: 0;
+  filter: drop-shadow(0px 4px 15px rgba(50, 51, 51, 0.25));
 }
 .overlay {
   position: absolute;
@@ -666,7 +676,7 @@ MediaQuery
     width: 100%;
   }
   .eslogan {
-    background: rgba(50, 51, 51, 0.3);
+    /* background: rgba(241, 244, 245, 0.3); */
     position: absolute;
     width: 650px;
     height: 265px;
@@ -770,7 +780,6 @@ MediaQuery
   li.nav-item {
     margin: 0px;
   }
-
   .navbar-icon {
     display: inline-flex !important;
   }
@@ -783,6 +792,12 @@ MediaQuery
     position: absolute;
     right: 175px;
     margin-top: 10px;
+  }
+
+  .underline {
+    color: #4c4dab !important;
+    border: #4c4dab 2px;
+    border-style: hidden hidden solid hidden !important;
   }
 
   /* -- containers--  */
@@ -994,7 +1009,13 @@ MediaQuery
     text-transform: uppercase;
     font-size: 0.875rem;
   }
-
+  .secondary-navbar a:hover {
+    color: #4c4dab;
+    font-weight: 600;
+    background: #fddc22;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 15px rgba(50, 51, 51, 0.25));
+  }
   .volver {
     color: #4c4dab;
   }
@@ -1042,6 +1063,7 @@ MediaQuery
     padding: 0px;
     border-radius: 8px;
   }
+  /* -- icons  */
 
   /* -- footer -- */
   .footer-menu ul {
