@@ -209,7 +209,7 @@ li {
 .header {
   width: 100%;
   height: 56px;
-  background: #fff;
+  background-color: #fff;
   position: fixed;
   margin: 0px;
   padding: 0px;
@@ -221,10 +221,10 @@ li {
   top: 120px;
 }
 .main.fixed-top {
-  background: aquamarine;
+  background-color: aquamarine;
 }
 .masthead {
-  background: url("../img/harli-marten-unsplash.jpg");
+  background-image: url("../img/harli-marten-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -245,9 +245,10 @@ li {
   height: 172px;
   top: 27px;
 }
-.estudio {
+.estudio,
+.documento {
   margin-top: 100px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .container-cards {
   margin-bottom: 25px !important;
@@ -263,16 +264,16 @@ li {
   top: 150px;
 }
 .preguntas {
-  background: #fff;
+  background-color: #fff;
   top: 300px;
 }
 .titulo {
   top: 150px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .inicio {
   top: 250px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 /* -- grids--  */
 .col-sm-8 {
@@ -293,6 +294,9 @@ li {
   flex: 0 0 auto;
   width: 100%;
 }
+.col-sm-6 {
+  margin: 25px auto;
+}
 /* -- components --  */
 
 .breadcrumb {
@@ -312,7 +316,6 @@ li {
   margin-left: 0px !important;
 }
 .row-about {
-  /* height: 50px; */
   margin: 5px;
 }
 .encabezado {
@@ -320,10 +323,25 @@ li {
   padding: 0px !important;
 }
 .difusion {
-  /* padding-bottom: 75px !important; */
   margin: 0px auto !important;
   text-align: center;
 }
+.card-documento {
+  background-color: #f1f4f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0px auto;
+  height: 400px;
+}
+.sentencia {
+  height: 425px !important;
+}
+.bibliografia,
+.info {
+  height: 320px !important;
+  margin: 0px auto;
+}
+
 .carousel {
   margin-bottom: 100px;
 }
@@ -345,7 +363,7 @@ li {
   transform: translateY(100%);
   transition: all 500ms ease-out;
   color: #323333;
-  background: #7f8182;
+  background-color: #7f8182;
   line-height: 28px;
 }
 .cookiealert.show {
@@ -380,7 +398,7 @@ li {
   color: #4c4dab !important;
   padding: 20px;
   margin-left: 0px;
-  background: #f1f4f5;
+  background-color: #f1f4f5;
   box-shadow: 0px 4px 15px rgba(50, 51, 51, 0.2);
 }
 .txt-primary.testimonios {
@@ -421,6 +439,19 @@ p.card-text-about {
   text-align: center;
   margin: 0px auto !important;
 }
+.card-text-documento {
+  font-weight: bold;
+  margin: 25px 0px;
+}
+.card-text-autor {
+  text-align: left;
+  margin: 0px;
+}
+.bibliografia p,
+.info p {
+  margin: 15px 0px !important;
+}
+
 .subtitulo-encuesta {
   margin-top: 20px !important;
   margin-left: 0px !important;
@@ -477,10 +508,6 @@ p.card-text-about {
   height: 60px;
   filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
 }
-.btn-primary:hover {
-  background-color: #fddc22 !important;
-  color: #4c4dab;
-}
 #myBtn {
   display: none;
   position: fixed;
@@ -520,6 +547,20 @@ p.card-text-about {
   border-radius: 15px;
   font-size: 8px;
   text-align: center;
+}
+.btn-documento {
+  width: 80%;
+  color: #ffffff;
+  background-color: #4c4dab !important;
+  border: #4c4dab !important;
+  border-radius: 8px;
+  margin: 25px;
+  padding-bottom: 10px !important;
+  height: 40px;
+  filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
+}
+.bibliografia .btn {
+  margin: 50px 23px !important;
 }
 .carousel-indicators {
   margin: 0px;
@@ -587,7 +628,7 @@ p.card-text-about {
   width: 153px;
   transform: translate(-50%, -50%);
   border-radius: 0 0 150px 150px;
-  background: rgba(76, 77, 171, 0.6);
+  background-color: rgba(76, 77, 171, 0.6);
   clip-path: polygon(0 48%, 100% 48%, 100% 79%, 75% 91%, 24% 91%, 0 75%);
   padding-top: 60px;
   font-size: 13px;
@@ -645,7 +686,7 @@ p.card-text-about {
   stroke-width: 1.5px;
   padding: 3px;
   border: 1px solid #ffffff;
-  background: #4c4dab;
+  background-color: #4c4dab;
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -716,7 +757,7 @@ MediaQuery
     width: 100%;
   }
   .eslogan {
-    /* background: rgba(241, 244, 245, 0.3); */
+    /* background-color: rgba(241, 244, 245, 0.3); */
     position: absolute;
     width: 650px;
     height: 265px;
@@ -727,7 +768,7 @@ MediaQuery
     margin: 0px;
   }
   .last-card {
-    width: 51%;
+    width: 50%;
   }
 
   /* -- grid -- */
@@ -837,7 +878,9 @@ MediaQuery
   }
   .navbar-icon {
     display: inline-flex !important;
+    background-color: transparent !important;
   }
+
   .dropdown-toggle,
   .hide {
     display: none;
@@ -871,7 +914,7 @@ MediaQuery
   .header {
     height: 75px;
     left: 125px;
-    background: #ffffff;
+    background-color: #ffffff;
   }
   .masthead {
     left: 0px;
@@ -948,6 +991,15 @@ MediaQuery
     line-height: 18px !important;
     padding: 25px 0px 5px 0px !important;
   }
+  .card-documento {
+    padding: 20px;
+    margin: 0px auto;
+    height: 350px;
+  }
+  .sentencia {
+    height: 350px !important;
+  }
+
   .carousel-inner {
     height: 375px;
   }
@@ -974,7 +1026,6 @@ MediaQuery
     margin: 0px;
   }
   .txt-primary {
-    /* background: none; */
     box-shadow: none;
     font-size: 20px !important;
     line-height: 36px !important;
@@ -1018,6 +1069,25 @@ MediaQuery
     font-size: 1.25rem;
     margin: 50px 20px 100px;
   }
+  p.card-text-documento,
+  p.card-text-autor {
+    font-size: 14px;
+    margin: 25px 0px 10px;
+  }
+  p.card-text-documento {
+    font-weight: bold;
+  }
+  .card-text-documento br {
+    display: none;
+  }
+  .bibliografia h4,
+  .info h4 {
+    margin-bottom: 25px !important;
+  }
+  .bibliografia p,
+  .info p {
+    margin: 15px 30px !important;
+  }
 
   /* -- buttons--  */
   .CTA-btn-container {
@@ -1041,6 +1111,15 @@ MediaQuery
     filter: drop-shadow(0px 4px 15px rgba(77, 79, 79, 0.2));
     font-size: 1.125rem;
   }
+  .btn-primary:hover,
+  .btn-documento:hover {
+    background-color: #fddc22 !important;
+    color: #4c4dab;
+  }
+  .bibliografia .btn {
+    margin: 50px 30px !important;
+  }
+
   .familias {
     float: right;
   }
@@ -1078,7 +1157,7 @@ MediaQuery
   .secondary-navbar a:hover {
     color: #4c4dab;
     font-weight: 600;
-    background: #fddc22;
+    background-color: #fddc22;
     border-radius: 8px;
     filter: drop-shadow(0px 4px 15px rgba(50, 51, 51, 0.25));
   }
@@ -1114,7 +1193,6 @@ MediaQuery
     width: 80%;
   }
   .bannerTertiary {
-    margin-top: 0px !important;
     margin-bottom: 100px !important;
   }
 
@@ -1128,8 +1206,6 @@ MediaQuery
     padding: 0px;
     border-radius: 8px;
   }
-  /* -- icons  */
-
   /* -- footer -- */
   .footer-menu ul {
     text-align: right;
@@ -1260,6 +1336,7 @@ Navigation Bar
     background-position: center;
     background-size: 100%;
   }
+
   .navbar-nav-scroll {
     max-height: var(--bs-scroll-height, 75vh);
     overflow-y: auto;
@@ -1373,9 +1450,6 @@ Navigation Bar
   .navbar-expand-xl .navbar-toggler {
     display: none;
   }
-  /* .nav-item{
-  padding-left: 10px !important;
-} */
   .container,
   .container-lg,
   .container-md,
@@ -1390,6 +1464,10 @@ Navigation Bar
     background: #fddc22;
     border-radius: 8px;
     filter: drop-shadow(0px 4px 15px rgba(50, 51, 51, 0.25));
+  }
+  .navbar-light .navbar-nav .nav-link .navbar-icon:hover,
+  .navbar-light .navbar-nav .nav-link .navbar-icon:focus {
+    background-color: transparent;
   }
 }
 
