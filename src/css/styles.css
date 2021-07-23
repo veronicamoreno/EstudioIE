@@ -593,6 +593,15 @@ p.card-text-about {
   text-decoration: underline;
 }
 
+.dominio:link {
+  color: #f1f4f5 !important;
+  text-decoration: none !important;
+}
+.dominio:visited {
+  color: #f1f4f5 !important;
+  text-decoration: none !important;
+}
+
 /*  --  images -- */
 .card-img-top {
   margin: 0px !important;
@@ -670,6 +679,22 @@ p.card-text-about {
   height: 30px;
   position: absolute;
   top: 30%;
+}
+.icon-footer {
+  display: inline-flex !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffffff !important;
+  stroke-width: 1px;
+  right: 70px;
+  top: 5px;
+}
+.icon-footer-share {
+  display: inline-flex !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffffff !important;
+  stroke-width: 1px;
+  right: 30px;
+  top: 5px;
 }
 .share-2 {
   margin-left: 30px;
@@ -848,7 +873,10 @@ MediaQuery
     display: block !important;
   }
   /*  -- icons -- */
-
+  .icon-footer {
+    left: 200px !important;
+    top: 20px !important;
+  }
   /*  -- footer -- */
   .footer span {
     text-align: left;
@@ -1196,6 +1224,11 @@ MediaQuery
     padding: 0px;
     border-radius: 8px;
   }
+  /*  -- icons --  */
+  .icon-footer {
+    display: none !important;
+  }
+
   /* -- footer -- */
   .footer-menu ul {
     text-align: right;
