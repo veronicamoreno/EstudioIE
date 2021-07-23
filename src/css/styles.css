@@ -511,8 +511,8 @@ p.card-text-about {
 #myBtn {
   display: none;
   position: fixed;
-  left: 340px;
-  top: 550px;
+  left: 380px;
+  top: 625px;
   width: 37.01px;
   height: 40px;
   z-index: 99;
@@ -691,16 +691,6 @@ p.card-text-about {
   width: 30px;
   height: 30px;
   margin: 0px 20px 0px 30px;
-}
-.socialmedia {
-  color: #4c4dab;
-  background-color: #ffffff;
-  width: 30px;
-  height: 30px;
-  stroke-width: 1px;
-}
-.socialmedia:hover {
-  color: #fddc22;
 }
 
 /*  --  footer -- */
