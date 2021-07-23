@@ -511,8 +511,8 @@ p.card-text-about {
 #myBtn {
   display: none;
   position: fixed;
-  left: 380px;
-  top: 625px;
+  left: 350px;
+  top: 580px;
   width: 37.01px;
   height: 40px;
   z-index: 99;
