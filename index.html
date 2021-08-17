@@ -36,6 +36,21 @@
       rel="stylesheet"
     />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LYF9J588LJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LYF9J588LJ");
+    </script>
+
     <!-- Stylesheet -->
     <link href="src/css/styles.css" rel="stylesheet" type="text/css" />
   </head>
@@ -101,8 +116,8 @@
                 href="mailto:testimoniosie@gmail.com"
                 target="_blank"
                 alt="correo"
-                ><i class="icon" data-feather="mail"></i
-              ></a>
+                ><i class="icon" data-feather="mail"></i>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link navbar-icon" onclick="share()">
