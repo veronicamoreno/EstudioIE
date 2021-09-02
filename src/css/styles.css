@@ -94,7 +94,7 @@ li {
 .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 0px;
   margin-bottom: 0;
   list-style: none;
 }
@@ -1352,8 +1352,8 @@ Navigation Bar
   }
   .navbar-toggler-icon {
     display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1.2em;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;

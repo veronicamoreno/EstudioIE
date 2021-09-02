@@ -144,10 +144,3 @@ function topFunction() {
 })();
 
 
-// ----------------------
-// Share
-// ----------------------
-
-function share() {
-  alert("Hello! I am an alert box!");
-}
