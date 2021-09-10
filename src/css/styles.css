@@ -681,6 +681,7 @@ p.card-text-about {
   position: absolute;
   top: 30%;
 }
+
 .icon-footer {
   display: inline-flex !important;
   color: #ffffff !important;
@@ -696,9 +697,6 @@ p.card-text-about {
   stroke-width: 1px;
   right: 30px;
   top: 5px;
-}
-.share-2 {
-  margin-left: 30px;
 }
 .chevron-up {
   border: none;
